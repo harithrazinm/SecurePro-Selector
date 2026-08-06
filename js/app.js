@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded", () => { const grid = document.querySelector("#serviceGrid"); if (!grid) return; const renderServices = () => { grid.innerHTML = Object.entries(SERVICES).map(([slug, s]) => `<div class="col-sm-6 col-lg-4"><a class="service-card" href="pages/${slug}/index.html"><div class="service-icon">${s.icon}</div><h3>${s.name}</h3><p>${s.tagline}</p><span class="arrow">${t("build")}</span></a></div>`).join(""); }; renderServices(); document.addEventListener("languagechange", renderServices); });
+
