@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sonic System Solution Pembekal & Installer No 1 Kelantan.">
+  <title>Sonic System Solution</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/interactive.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-white sticky-top border-bottom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" aria-label="Sonic System Solution home">
+        <img class="brand-logo" src="assets/logo.png" alt="Sonic System Solution logo">
+        <span class="brand-name"></span>
+      </a>
+      <div class="d-flex gap-2">
+        <button class="btn btn-light border btn-sm language-toggle" id="languageToggle" type="button">BM</button>
+        <a class="btn btn-outline-dark btn-sm" href="#services" data-i18n="quote">Get a service</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container py-5">
+      <div class="row align-items-center min-vh-60">
+        <div class="col-lg-7">
+          <p class="eyebrow text-white" data-i18n="eyebrow">SMART SECURITY • MALAYSIA</p>
+          <h1 data-i18n="heroTitle">Protection, tailored to your property.</h1>
+          <p class="lead text-white-50 mt-3" data-i18n="heroText">Answer a few simple questions and receive a clear,
+            no-obligation recommendation from Sonic System Solution.</p>
+          <a class="btn btn-primary btn-lg mt-3" href="#services">
+            <span data-i18n="start">Start selecting</span> <span aria-hidden="true">→</span>
+          </a>
+        </div>
+        <div class="col-lg-4 offset-lg-1 mt-4 mt-lg-0">
+          <div class="hero-card">
+            <div class="small text-uppercase text-secondary fw-bold" data-i18n="why">Why Sonic System Solution</div>
+            <div class="stat">7<span>+</span></div>
+            <p class="mb-0" data-i18n="statText">specialist solutions for homes and businesses, designed around how you
+              use your space.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="services" class="py-5">
+      <div class="container py-lg-4">
+        <div class="row align-items-end mb-4">
+          <div class="col-md-7">
+            <p class="eyebrow" data-i18n="select">SELECT A SERVICE</p>
+            <h2 data-i18n="serviceTitle">What would you like to secure?</h2>
+          </div>
+          <div class="col-md-5">
+            <p class="text-secondary mb-0" data-i18n="serviceText">Choose a solution to begin your personalised
+              quotation request.</p>
+          </div>
+        </div>
+
+        <!-- DIRECT HARDCODED SERVICE GRID (NO DEPENDENCY ON SERVICES.JS) -->
+        <div class="row g-4" id="serviceGrid">
+
+          <!-- CARD 1: Solar CCTV -->
+          <div class="col-md-6 col-lg-4">
+            <a href="pages/solar-cctv/index.html"
+              class="card h-100 service-card border shadow-sm p-4 text-decoration-none text-dark d-block">
+              <div class="service-icon-wrap mb-4 d-flex align-items-center" style="height: 80px;">
+                <img src="assets/solarcctv.png" alt="Solar CCTV Logo"
+                  style="width: 80px; height: 80px; object-fit: contain;">
+              </div>
+              <h3 class="h5 fw-bold text-dark" data-i18n="cardSolarTitle">Solar CCTV</h3>
+              <p class="text-secondary small mb-3 flex-grow-1" data-i18n="cardSolarDesc">See what matters, wherever you
+                are.</p>
+              <div class="d-flex justify-content-end align-items-center mt-auto pt-3 border-top">
+                <span class="btn btn-sm btn-outline-primary" data-i18n="cardSelect">Select →</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- CARD 2: Standard CCTV -->
+          <div class="col-md-6 col-lg-4">
+            <a href="pages/cctv/index.html"
+              class="card h-100 service-card border shadow-sm p-4 text-decoration-none text-dark d-block">
+              <div class="service-icon-wrap mb-4 d-flex align-items-center" style="height: 80px;">
+                <img src="assets/cctv.png" alt="CCTV Logo" style="width: 80px; height: 80px; object-fit: contain;"
+                  onerror="this.replaceWith('📹')">
+              </div>
+              <h3 class="h5 fw-bold text-dark" data-i18n="cardCctvTitle">CCTV System</h3>
+              <p class="text-secondary small mb-3 flex-grow-1" data-i18n="cardCctvDesc">Reliable 24/7 high-definition
+                property monitoring.</p>
+              <div class="d-flex justify-content-end align-items-center mt-auto pt-3 border-top">
+                <span class="btn btn-sm btn-outline-primary" data-i18n="cardSelect">Select →</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- CARD 3: Alarm System -->
+          <div class="col-md-6 col-lg-4">
+            <a href="pages/alarm/index.html"
+              class="card h-100 service-card border shadow-sm p-4 text-decoration-none text-dark d-block">
+              <div class="service-icon-wrap mb-4 d-flex align-items-center" style="height: 80px;">
+                <img src="assets/alarm.png" alt="Alarm Logo" style="width: 80px; height: 80px; object-fit: contain;"
+                  onerror="this.replaceWith('🚨')">
+              </div>
+              <h3 class="h5 fw-bold text-dark" data-i18n="cardAlarmTitle">Alarm System</h3>
+              <p class="text-secondary small mb-3 flex-grow-1" data-i18n="cardAlarmDesc">Smart intrusion alerts to
+                secure your perimeter.</p>
+              <div class="d-flex justify-content-end align-items-center mt-auto pt-3 border-top">
+                <span class="btn btn-sm btn-outline-primary" data-i18n="cardSelect">Select →</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- CARD 4: Autogate -->
+          <div class="col-md-6 col-lg-4">
+            <a href="pages/autogate/index.html"
+              class="card h-100 service-card border shadow-sm p-4 text-decoration-none text-dark d-block">
+              <div class="service-icon-wrap mb-4 d-flex align-items-center" style="height: 80px;">
+                <img src="assets/autogate.png" alt="Autogate Logo"
+                  style="width: 80px; height: 80px; object-fit: contain;" onerror="this.replaceWith('🚧')">
+              </div>
+              <h3 class="h5 fw-bold text-dark" data-i18n="cardAutogateTitle">Autogate System</h3>
+              <p class="text-secondary small mb-3 flex-grow-1" data-i18n="cardAutogateDesc">Seamless motorized entry for
+                your gate access.</p>
+              <div class="d-flex justify-content-end align-items-center mt-auto pt-3 border-top">
+                <span class="btn btn-sm btn-outline-primary" data-i18n="cardSelect">Select →</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- CARD 5: Door Access -->
+          <div class="col-md-6 col-lg-4">
+            <a href="pages/access/index.html"
+              class="card h-100 service-card border shadow-sm p-4 text-decoration-none text-dark d-block">
+              <div class="service-icon-wrap mb-4 d-flex align-items-center" style="height: 80px;">
+                <img src="assets/door.png" alt="Door Access Logo"
+                  style="width: 80px; height: 80px; object-fit: contain;" onerror="this.replaceWith('🔐')">
+              </div>
+              <h3 class="h5 fw-bold text-dark" data-i18n="cardDoorTitle">Door Access</h3>
+              <p class="text-secondary small mb-3 flex-grow-1" data-i18n="cardDoorDesc">Card, PIN, or biometric keyless
+                entry control.</p>
+              <div class="d-flex justify-content-end align-items-center mt-auto pt-3 border-top">
+                <span class="btn btn-sm btn-outline-primary" data-i18n="cardSelect">Select →</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- CARD 6: Time & Attendance -->
+          <div class="col-md-6 col-lg-4">
+            <a href="pages/attendance/index.html"
+              class="card h-100 service-card border shadow-sm p-4 text-decoration-none text-dark d-block">
+              <div class="service-icon-wrap mb-4 d-flex align-items-center" style="height: 80px;">
+                <img src="assets/time.png" alt="Time Attendance Logo"
+                  style="width: 80px; height: 80px; object-fit: contain;" onerror="this.replaceWith('⏰')">
+              </div>
+              <h3 class="h5 fw-bold text-dark" data-i18n="cardTimeTitle">Time Attendance</h3>
+              <p class="text-secondary small mb-3 flex-grow-1" data-i18n="cardTimeDesc">Biometric fingerprint, face
+                recognition & automated staff attendance tracking.</p>
+              <div class="d-flex justify-content-end align-items-center mt-auto pt-3 border-top">
+                <span class="btn btn-sm btn-outline-primary" data-i18n="cardSelect">Select →</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- CARD 7: Solar Pump -->
+          <div class="col-md-6 col-lg-4">
+            <a href="pages/solar-pump/index.html"
+              class="card h-100 service-card border shadow-sm p-4 text-decoration-none text-dark d-block">
+              <div class="service-icon-wrap mb-4 d-flex align-items-center" style="height: 80px;">
+                <img src="assets/solar-pump.png" alt="Solar Pump Logo"
+                  style="width: 80px; height: 80px; object-fit: contain;" onerror="this.replaceWith('☀️')">
+              </div>
+              <h3 class="h5 fw-bold text-dark" data-i18n="cardPumpTitle">Solar Pump System</h3>
+              <p class="text-secondary small mb-3 flex-grow-1" data-i18n="cardPumpDesc">Eco-friendly off-grid water
+                pumping for agricultural, pond, and land irrigation needs.</p>
+              <div class="d-flex justify-content-end align-items-center mt-auto pt-3 border-top">
+                <span class="btn btn-sm btn-outline-primary" data-i18n="cardSelect">Select →</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- CARD 8: Barrier Gate -->
+          <div class="col-md-6 col-lg-4">
+            <a href="pages/barriergate/index.html"
+              class="card h-100 service-card border shadow-sm p-4 text-decoration-none text-dark d-block">
+              <div class="service-icon-wrap mb-4 d-flex align-items-center" style="height: 80px;">
+                <img src="assets/barrier.png" alt="Barrier Gate Logo"
+                  style="width: 80px; height: 80px; object-fit: contain;" onerror="this.replaceWith('🚧')">
+              </div>
+              <h3 class="h5 fw-bold text-dark" data-i18n="cardBarrierTitle">Barrier Gate System</h3>
+              <p class="text-secondary small mb-3 flex-grow-1" data-i18n="cardBarrierDesc">Automated vehicle access
+                control and boom gate solutions for commercial and residential premises.</p>
+              <div class="d-flex justify-content-end align-items-center mt-auto pt-3 border-top">
+                <span class="btn btn-sm btn-outline-primary" data-i18n="cardSelect">Select →</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- CARD 9: PABX System -->
+          <div class="col-md-6 col-lg-4">
+            <a href="pages/pabx/index.html"
+              class="card h-100 service-card border shadow-sm p-4 text-decoration-none text-dark d-block">
+              <div class="service-icon-wrap mb-4 d-flex align-items-center" style="height: 80px;">
+                <img src="assets/pabx.png" alt="PABX Logo" style="width: 80px; height: 80px; object-fit: contain;"
+                  onerror="this.replaceWith('☎️')">
+              </div>
+              <h3 class="h5 fw-bold text-dark" data-i18n="cardPabxTitle">PABX System</h3>
+              <p class="text-secondary small mb-3 flex-grow-1" data-i18n="cardPabxDesc">Professional office
+                telecommunication and intercom solutions for seamless communication.</p>
+              <div class="d-flex justify-content-end align-items-center mt-auto pt-3 border-top">
+                <span class="btn btn-sm btn-outline-primary" data-i18n="cardSelect">Select →</span>
+              </div>
+            </a>
+          </div>
+
+        </div> <!-- Closes #serviceGrid -->
+      </div> <!-- Closes .container -->
+    </section> <!-- Closes #services section -->
+
+    <!-- PARTNERS & BRANDS MARQUEE SECTION -->
+    <section id="partners" class="py-5 bg-light">
+      <div class="container py-4 text-center">
+        <h2 class="mb-3" data-i18n="partnersTitle">Partners & Brands</h2>
+        <p class="lead text-secondary mx-auto mb-5" style="max-width: 750px;" data-i18n="partnersText">
+          We have over 25 network of partners and brands, to ensure seamless and convenient access to top-quality
+          security systems and solutions.
+        </p>
+
+        <!-- Marquee -->
+        <div class="ix-marquee" aria-label="Partner and brand logos">
+          <div class="ix-marquee-track">
+            <div class="ix-marquee-group">
+              <img src="assets/1.png" alt="Brand 1" class="brand-logo-slide">
+              <img src="assets/2.png" alt="Brand 2" class="brand-logo-slide">
+              <img src="assets/3.png" alt="Brand 3" class="brand-logo-slide">
+              <img src="assets/4.png" alt="Brand 4" class="brand-logo-slide">
+              <img src="assets/5.png" alt="Brand 5" class="brand-logo-slide">
+              <img src="assets/6.png" alt="Brand 6" class="brand-logo-slide">
+              <img src="assets/7.png" alt="Brand 7" class="brand-logo-slide">
+              <img src="assets/8.png" alt="Brand 8" class="brand-logo-slide">
+              <img src="assets/9.png" alt="Brand 9" class="brand-logo-slide">
+              <img src="assets/10.png" alt="Brand 10" class="brand-logo-slide">
+              <img src="assets/11.png" alt="Brand 11" class="brand-logo-slide">
+              <img src="assets/12.png" alt="Brand 12" class="brand-logo-slide">
+              <img src="assets/13.png" alt="Brand 13" class="brand-logo-slide">
+              <img src="assets/14.png" alt="Brand 14" class="brand-logo-slide">
+              <img src="assets/15.png" alt="Brand 15" class="brand-logo-slide">
+              <img src="assets/16.png" alt="Brand 16" class="brand-logo-slide">
+              <img src="assets/17.png" alt="Brand 17" class="brand-logo-slide">
+              <img src="assets/18.png" alt="Brand 18" class="brand-logo-slide">
+              <img src="assets/19.png" alt="Brand 19" class="brand-logo-slide">
+              <img src="assets/20.png" alt="Brand 20" class="brand-logo-slide">
+              <img src="assets/21.png" alt="Brand 21" class="brand-logo-slide">
+              <img src="assets/22.png" alt="Brand 22" class="brand-logo-slide">
+              <img src="assets/23.png" alt="Brand 23" class="brand-logo-slide">
+              <img src="assets/24.png" alt="Brand 24" class="brand-logo-slide">
+              <img src="assets/25.png" alt="Brand 25" class="brand-logo-slide">
+              <img src="assets/26.png" alt="Brand 26" class="brand-logo-slide">
+            </div>
+            <div class="ix-marquee-group" aria-hidden="true">
+              <img src="assets/1.png" alt="" class="brand-logo-slide">
+              <img src="assets/2.png" alt="" class="brand-logo-slide">
+              <img src="assets/3.png" alt="" class="brand-logo-slide">
+              <img src="assets/4.png" alt="" class="brand-logo-slide">
+              <img src="assets/5.png" alt="" class="brand-logo-slide">
+              <img src="assets/6.png" alt="" class="brand-logo-slide">
+              <img src="assets/7.png" alt="" class="brand-logo-slide">
+              <img src="assets/8.png" alt="" class="brand-logo-slide">
+              <img src="assets/9.png" alt="" class="brand-logo-slide">
+              <img src="assets/10.png" alt="" class="brand-logo-slide">
+              <img src="assets/11.png" alt="" class="brand-logo-slide">
+              <img src="assets/12.png" alt="" class="brand-logo-slide">
+              <img src="assets/13.png" alt="" class="brand-logo-slide">
+              <img src="assets/14.png" alt="" class="brand-logo-slide">
+              <img src="assets/15.png" alt="" class="brand-logo-slide">
+              <img src="assets/16.png" alt="" class="brand-logo-slide">
+              <img src="assets/17.png" alt="" class="brand-logo-slide">
+              <img src="assets/18.png" alt="" class="brand-logo-slide">
+              <img src="assets/19.png" alt="" class="brand-logo-slide">
+              <img src="assets/20.png" alt="" class="brand-logo-slide">
+              <img src="assets/21.png" alt="" class="brand-logo-slide">
+              <img src="assets/22.png" alt="" class="brand-logo-slide">
+              <img src="assets/23.png" alt="" class="brand-logo-slide">
+              <img src="assets/24.png" alt="" class="brand-logo-slide">
+              <img src="assets/25.png" alt="" class="brand-logo-slide">
+              <img src="assets/26.png" alt="" class="brand-logo-slide">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4">
+    <div class="container d-flex flex-column flex-sm-row justify-content-between gap-2">
+      <span data-i18n="rights">© 2026 Sonic System Solution. All rights reserved.</span>
+      <a href="https://wa.me/60196162487" target="_blank" rel="noopener" data-i18n="whatsapp">WhatsApp us</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/interactive.js"></script>
+</body>
+
+</html>
